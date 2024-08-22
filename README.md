@@ -20,7 +20,7 @@ Before running it read below:
 12. Run the script! You should see your browser pop up and you'll see it scroll down every 5s. If your page loads slower, increase the time.sleep value on line 21.
 13. All the links will be in the file only once the script has finished.
 
-Now you can do with that what you wish. E.g. you can download all the videos by running something like `cat links.txt | grep 'watch' | awk '!a[$0]++' | awk -F '&' '{print $1}' > links_angel.txt` on Linux which will deduplicate and extract only watch links from the list. Then use yt-dlp with the a switch, i.e. yt-dlp -a links_angel.txt to download it.
+Now you can do with that what you wish. E.g. you can download all the videos by running something like `cat links.txt | grep 'watch' | awk '!a[$0]++' | awk -F '&' '{print $1}' > links_angel.txt` on Linux which will deduplicate and extract only watch links from the list. Then use yt-dlp with the a switch, i.e. `yt-dlp -a links_angel.txt` to download it.
 
 
 
